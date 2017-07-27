@@ -1,0 +1,87 @@
+.keys {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+
+.shakeit {
+  animation: theshakes 0.75s ease;
+}
+
+@keyframes theshakes {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+.keydown {
+  animation: mymove 0.15s ease;
+}
+
+@keyframes mymove {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+  100% {
+    border-color: rgb(66, 134, 244);
+  }
+  100% {
+    box-shadow: 0 0 1rem rgb(66, 134, 244);
+  }
+}
+
+
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+@media (max-width: 600px) {
+  .key {
+    width: 5rem;
+    font-size: 0.5rem;
+  }
+  .sound {
+    font-size: 0.7rem;
+  }
+}
