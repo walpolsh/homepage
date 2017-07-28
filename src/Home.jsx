@@ -47,7 +47,7 @@ class Home extends Component {
               </Col>
 
               <Col sm={6} md={3}>
-                On my own time I like to keep myself busy by reading, working on new projects, lifting weights or playing guitar.
+                Ultimately what I want to do is create things that people will actually be useful to people in their daily lives. On my own time I like to keep busy by reading, working on new projects, exercising or playing guitar.
               </Col>
             </Row>
           </Grid>
