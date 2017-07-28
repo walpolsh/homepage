@@ -30,8 +30,7 @@ class Api extends Component {
 
       //urls with permalink added
       let webdevPosts = [];
-      // push each post to the state. this is done by setting the event target
-      // to a set attribute change in state, the image 
+      // push each post to the state by setting the event target to a setAttribute
       for (let i = 0; i < childArray.length; i++) {
         webdevPosts.push(
           <ul key={i} className="posts">
@@ -46,8 +45,9 @@ class Api extends Component {
             </a>
           </ul>
         );
-      }
-      //
+      };
+
+      // this is each post being pushed to the state in real time.
       base.setState({ posts: webdevPosts });
     }).catch((ex) => {
       console.log('An error occured while parsing!', ex); //errors

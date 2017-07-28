@@ -2,10 +2,20 @@ import React, { Component } from 'react';
 import { Grid, Image, Row, Col, Jumbotron, Clearfix } from 'react-bootstrap';
 import Topics from './Topics';
 const photo = require('./images/paul.png');
-const plateAgain = require('./images/plateagain.jpg');
+const plateAgain = require('./images/plateagain.png');
+
 
 class Home extends Component {
   render() {
+    const styles = {
+      image: {
+        height: '100%',
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+    };
     return (
       <div>
         <div>
@@ -19,7 +29,7 @@ class Home extends Component {
             <hr/>
           </Jumbotron>
           <Grid>
-            <Row className="show-grid">
+            <Row className="show-grid" width='860px'>
               <Col sm={6} md={3}>
                 My interest in web development was spurred by someone who is also a musician, and after a few discussions I realized I'd found a deep passion for the problem solving and optimization aespects of programming! After a few months of self study I decided I really wanted to make the full commitment so I signed up for a semester at BitMaker.
               </Col>
@@ -42,8 +52,8 @@ class Home extends Component {
             </Row>
           </Grid>
 
-          <a href='https://plateagain.herokuapp.com/'>
-            <Image alt="plateAgain" className="text-center" src={plateAgain}></Image>
+          <a style={styles.image} href='https://plateagain.herokuapp.com/'>
+            <img alt="plateAgain" style={styles.image} src={plateAgain}></img>
           </a>
         </div>
         <div>
