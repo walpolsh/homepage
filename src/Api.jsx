@@ -8,6 +8,7 @@ class Api extends Component {
       posts: '',
     };
   }
+
   componentDidMount() {
     let base = this;
     let api = 'https://www.reddit.com/r/webdev/top.json?limit=100&t=week';
@@ -19,14 +20,18 @@ class Api extends Component {
       let childArray = child.map(function (x) {
         return x.data;
       });
+
       // these are the children or the individual posts on Reddit
       // console.log(child)
 
       let permaUrl = childArray.map(function(child) {
         return 'https://www.reddit.com' + child.permalink.toString()
-      })
+      });
+
       //urls with permalink added
       let webdevPosts = [];
+      // push each post to the state. this is done by setting the event target
+      // to a set attribute change in state, the image 
       for (let i = 0; i < childArray.length; i++) {
         webdevPosts.push(
           <ul key={i} className="posts">
@@ -42,6 +47,7 @@ class Api extends Component {
           </ul>
         );
       }
+      //
       base.setState({ posts: webdevPosts });
     }).catch((ex) => {
       console.log('An error occured while parsing!', ex); //errors
@@ -53,9 +59,9 @@ class Api extends Component {
     return (
       <div>
         <div>
-          <h1>
-            Here I've fetched JSON data from Reddit to display the current top 100 Posts this week on <a href="https://www.reddit.com/r/webdev/">r/webdev!</a>
-          </h1>
+          <h3>
+            This is JSON data from Reddit displaying the current top 100 Posts this week on Reddit<a href="https://www.reddit.com/r/webdev/">r/webdev!</a>
+          </h3>
           <ul className="post-container">{posts}</ul>
         </div>
       </div>
