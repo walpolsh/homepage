@@ -22,6 +22,10 @@ class Home extends Component {
       paragraph: {
         marginTop: '10px',
       },
+      selfie: {
+        width: '50%',
+        height: 'auto',
+      },
     };
     return (
       <div>
@@ -29,7 +33,7 @@ class Home extends Component {
           <Jumbotron style={styles.fade} className="text-center">
             <h1>Paul Walsh</h1>
             <h2>Web Developer And Musician</h2>
-            <Image alt="Paul" src={photo} circle></Image>
+            <Image alt="Paul" src={photo} style={styles.selfie} circle></Image>
             <p>
               I am a web developer and classically trained rock musician with a passion for solving new problems, and improving on existing solutions.
             </p>
