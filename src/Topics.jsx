@@ -9,7 +9,7 @@ const Topics = () => (
     <div className="text-center">
         <ul>
           <h3>
-            React.js Components:
+            React.js Examples:
           </h3>
         </ul>
 

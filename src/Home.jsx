@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { Grid, Image, Row, Col, Jumbotron, Clearfix } from 'react-bootstrap';
 import Topics from './Topics';
+import './styles/Home.css';
 const photo = require('./images/paul.png');
 const plateAgain = require('./images/plateagain.png');
 
 class Home extends Component {
+  componentDidMount() {
+    let el = document.querySelector('.fade');
+    el.classList.add('fade-in');
+  };
+
   render() {
     const styles = {
       image: {
@@ -19,8 +25,8 @@ class Home extends Component {
     };
     return (
       <div>
-        <div>
-          <Jumbotron className="text-center">
+        <div className="fade">
+          <Jumbotron style={styles.fade} className="text-center">
             <h1>Paul Walsh</h1>
             <h2>Web Developer And Musician</h2>
             <Image alt="Paul" src={photo} circle></Image>
