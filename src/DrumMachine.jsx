@@ -35,12 +35,12 @@ class DrumMachine extends Component {
 
     return (
       <div>
-        <h1>
-          Your Keyboard is a Drum Machine!
-        </h1>
-        <h2>
+        <h3>
+          This component allows you to use your keyboard as a Drum Machine!
+        </h3>
+        <h3>
           BOOM BAP!
-        </h2>
+        </h3>
         <div>
           <div className="keys">
             <div data-key="65" id="a" className="key">

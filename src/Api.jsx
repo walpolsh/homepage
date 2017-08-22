@@ -60,7 +60,7 @@ class Api extends Component {
       <div>
         <div>
           <h3>
-            This is JSON data from Reddit displaying the current top 100 Posts this week on Reddit<a href="https://www.reddit.com/r/webdev/">r/webdev!</a>
+            This component uses JSON data from Reddit to display the top 100 posts this week on <a href="https://www.reddit.com/r/webdev/"> r/webdev!</a>
           </h3>
           <ul className="post-container">{posts}</ul>
         </div>

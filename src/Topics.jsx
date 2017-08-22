@@ -8,15 +8,15 @@ const Topics = () => (
   <Router>
     <div className="text-center">
         <ul>
-          <h1>
-            Here are a few components I've built with React!
-          </h1>
+          <h3>
+            React.js Components:
+          </h3>
         </ul>
 
         <Well>
           <DrumMachine />
         </Well>
-        <hr/>
+
         <Well>
           <Api />
         </Well>
