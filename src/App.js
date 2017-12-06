@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import Music from './Music';
-import Footer from './Footer';
+import Social from './Social';
 
 const divStyle = {
   margin: '2px',
@@ -28,7 +28,7 @@ class App extends Component {
             <Route path="/portfolio" component={Portfolio}></Route>
             <Route path="/music" component={Music}></Route>
           </div>
-          <Footer/>
+          <Social/>
         </div>
       </Router>
     );

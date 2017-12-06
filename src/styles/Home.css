@@ -1,6 +1,7 @@
 .fade {
   opacity: 0;
-  transition: 2s opacity;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
 }
 
 .fade-in {

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './styles/footer.css';
+import './styles/Social.css';
 
-class Footer extends Component {
+class Social extends Component {
   render(){
     return(
       <div className="text-center">
         <hr></hr>
-        <h2>Visit Me On Social Media:</h2>
         <div className="fa-container">
           <a href="https://github.com/walpolsh" className="fa fa-github">GitHub</a>
           <a href="https://www.linkedin.com/in/pauljosephwalsh/" className="fa fa-linkedin-square">LinkedIn</a>
@@ -19,4 +18,4 @@ class Footer extends Component {
   };
 }
 
-export default Footer;
+export default Social;

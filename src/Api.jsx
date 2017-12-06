@@ -12,10 +12,7 @@ class Api extends Component {
   componentDidMount() {
     let base = this;
     let api = 'https://www.reddit.com/r/webdev/top.json?limit=100&t=week';
-    fetch(api, {
-      'mode': 'no-cors',
-      'content-type': 'text/plain',
-    }).then((response) => {
+    fetch(api).then((response) => {
       return response.json()
     }).then((json) => {
       let child = json.data.children
@@ -28,7 +25,7 @@ class Api extends Component {
       let webdevPosts = []
       for (let i = 0; i < childArray.length; i++) {
         webdevPosts.push(
-          <ul key={i} className="posts">
+          <ul key={i} className="posts text-center">
             <a href={permaUrl[i]}>
               <div>
                 <img alt={i} src={childArray[i].thumbnail} width='200px' height='200px' onError={(event) => event.target.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/4/43/Reddit.svg')}/>
@@ -52,9 +49,9 @@ class Api extends Component {
     return (
       <div>
         <div>
-          <h3>
-            This component uses JSON data from Reddit to display the top 100 posts this week on <a href="https://www.reddit.com/r/webdev/"> r/webdev!</a>
-          </h3>
+          <p>
+            This component was built after completing General Assembly's React course. uses JSON data from Reddit to display the top 100 posts this week on <a href="https://www.reddit.com/r/webdev/"> r/webdev!</a>
+          </p>
           <ul className="post-container">{posts}</ul>
         </div>
       </div>
