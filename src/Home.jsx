@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Image, Row, Col, Jumbotron, Clearfix } from 'react-bootstrap';
-import Topics from './Topics';
+import { Grid, Image, Row, Col, Jumbotron } from 'react-bootstrap';
 import './styles/Home.css';
 const photo = require('./images/paul.png');
 const plateAgain = require('./images/plateagain.png');
@@ -32,21 +31,22 @@ class Home extends Component {
         <div className="fade">
           <Jumbotron style={styles.fade} className="text-center">
             <h1>Paul Walsh</h1>
-            <h2>Web Developer And Musician</h2>
+            <h2>Web Application Developer</h2>
             <Image alt="Paul" src={photo} style={styles.selfie} circle></Image>
             <p>
-              I am a web developer and classically trained rock musician with a passion for solving new problems, and improving on existing solutions.
+              Specializing in front end development. Experienced with all stages of development cycle for dynamic web projects. Background in music performance and instruction. Passionate about creative design, user experience, communication and problem solving.
             </p>
             <hr/>
           </Jumbotron>
           <Grid>
             <Row className="show-grid" width='860px'>
               <Col xs={6} md={6}>
-                My interest in web development was spurred by someone who is also a musician, and after a few discussions I realized I'd found a deep passion for the problem solving and optimization aespects of programming! After a year of self study I decided I really wanted to make the full commitment so I signed up for a semester at BitMaker.
+                I've always loved working with computers starting in high school where I began building my audio engineering skills. My interest in web development started in conversation with another musician, and after a few discussions I realized I'd found another deep passion for solving programming problems! I started staying up late and waking up early to solve coding problems.
               </Col>
 
               <Col xs={6} md={6}>
-                At BitMaker's January 2017 Web Development Cohort I spent 9 weeks immersively building full-stack Ruby on Rails applications. For my final project I worked with an Agile team to create <a href='https://plateagain.herokuapp.com/'>
+                To assure my full commitment I signed up for a semester at BitMaker's January 2017 Web Development Cohort I spent 9 weeks immersively building full-stack Ruby on Rails applications. For my final project I worked with an Agile team to create &nbsp;
+                <a href='https://plateagain.herokuapp.com/'>
                     Plate Again
                 </a>, an app designed to connect the needy of our society with providers of excess food.
               </Col>
@@ -67,9 +67,6 @@ class Home extends Component {
               </Col>
             </Row>
           </Grid>
-        </div>
-        <div>
-          <Topics />
         </div>
       </div>
     );

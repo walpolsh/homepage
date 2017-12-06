@@ -12,25 +12,20 @@ class Api extends Component {
   componentDidMount() {
     let base = this;
     let api = 'https://www.reddit.com/r/webdev/top.json?limit=100&t=week';
-    fetch(api).then((response) => {
-      return response.json(); //get me the json from reddit
+    fetch(api, {
+      'mode': 'no-cors',
+      'content-type': 'text/plain',
+    }).then((response) => {
+      return response.json()
     }).then((json) => {
-      let child = json.data.children; //json Data
-      //target specifically the children within the json data...
+      let child = json.data.children
       let childArray = child.map(function (x) {
         return x.data;
-      });
-
-      // these are the children or the individual posts on Reddit
-      // console.log(child)
-
+      })
       let permaUrl = childArray.map(function(child) {
-        return 'https://www.reddit.com' + child.permalink.toString()
-      });
-
-      //urls with permalink added
-      let webdevPosts = [];
-      // push each post to the state by setting the event target to a setAttribute
+        return 'https://www.reddit.com' + child.permalink.toString();
+      })
+      let webdevPosts = []
       for (let i = 0; i < childArray.length; i++) {
         webdevPosts.push(
           <ul key={i} className="posts">
@@ -46,11 +41,9 @@ class Api extends Component {
           </ul>
         );
       };
-
-      // this is each post being pushed to the state in real time.
       base.setState({ posts: webdevPosts });
     }).catch((ex) => {
-      console.log('An error occured while parsing!', ex); //errors
+      console.log('An error occured while parsing!', ex);
     });
   }
 

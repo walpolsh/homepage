@@ -35,12 +35,9 @@ class DrumMachine extends Component {
 
     return (
       <div>
-        <h3>
-          This component allows you to use your keyboard as a Drum Machine!
-        </h3>
-        <h3>
-          BOOM BAP!
-        </h3>
+        <p>
+          Upon my completion of <a href='https://javascript30.com/'>Wes Bos's JavaScript 30: 30 Day Vanilla JS Coding Challenge</a> It was a very practical learning experience and taught me many new tricks including new ES6 syntax, DOM manipulation, and CSS design concepts. I uploaded all of my work to GitHub if you'd like to check out my code... <a href='https://github.com/walpolsh/Js30'>Paul's JS30 Code</a>. After finishing the course I went back and redesigned his original drum machine with a new layout, animations and custom sounds:
+        </p>
         <div>
           <div className="keys">
             <div data-key="65" id="a" className="key">
