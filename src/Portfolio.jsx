@@ -34,10 +34,10 @@ const Portfolio = () => (
     <div>
         <Well>
           <p>
-              At BitMaker's January 2017 Web Development Cohort I spent 9 weeks immersively building full-stack Ruby on Rails applications. For my final project I worked with an Agile team to create&nbsp;
+              At BitMaker's January 2017 Web Development Cohort I spent 9 weeks immersively building full-stack Ruby on Rails applications. For my final project I worked with a team to create&nbsp;
               <a href='https://plateagain.herokuapp.com/'>
               Plate Again
-            </a>, an app designed to connect the needy of our society with providers of excess food. Built with Ruby on Rails.
+            </a> which is designed to connect the hungry with providers of excess food. Built with Ruby on Rails.
           </p>
           <a href='https://plateagain.herokuapp.com/'>
           <img alt="plateAgain" style={styles.image} src={plateAgain}></img></a>

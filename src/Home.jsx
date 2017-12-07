@@ -49,10 +49,10 @@ class Home extends Component {
             <Row style={styles.paragraph} className="show-grid">
 
               <Col>
-                To assure my full commitment I signed up for a semester at BitMaker's January 2017 Web Development Cohort I spent 9 weeks immersively building full-stack Ruby on Rails applications. For my final project I worked with an Agile team to create &nbsp;
+                To assure my full commitment I signed up for a semester at BitMaker's January 2017 Web Development Cohort I spent 9 weeks immersively building full-stack Ruby on Rails applications. For my final project I worked with a team to create &nbsp;
                 <a href='https://plateagain.herokuapp.com/'>
                     Plate Again
-                </a>, an app designed to connect the needy of our society with providers of excess food.
+                </a>, an app designed to connect the hungry with providers of excess food.
               </Col>
             </Row>
           </Grid>

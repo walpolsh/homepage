@@ -41,6 +41,7 @@ class Api extends Component {
       base.setState({ posts: webdevPosts });
     }).catch((ex) => {
       console.log('An error occured while parsing!', ex);
+      base.setState({ posts: <h1>Reddit isn't working... SORRY 503!</h1> });
     });
   }
 
@@ -50,7 +51,7 @@ class Api extends Component {
       <div>
         <div>
           <p>
-            This component was built after completing General Assembly's React course. uses JSON data from Reddit to display the top 100 posts this week on <a href="https://www.reddit.com/r/webdev/"> r/webdev!</a>
+            This component was built after completing General Assembly's React course. It uses JSON data from Reddit to display the top 100 posts on <a href="https://www.reddit.com/r/webdev/"> r/webdev this week.</a>
           </p>
           <ul className="post-container">{posts}</ul>
         </div>

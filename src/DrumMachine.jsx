@@ -36,7 +36,7 @@ class DrumMachine extends Component {
     return (
       <div>
         <p>
-          Upon my completion of <a href='https://javascript30.com/'>Wes Bos's JavaScript 30: 30 Day Vanilla JS Coding Challenge</a> It was a very practical learning experience and taught me many new tricks including new ES6 syntax, DOM manipulation, and CSS design concepts. Most importantly it taught me that it was possible to solve many Development problems without resorting to a framework, compiler, library, or even a boilerplate. I uploaded all of my work to GitHub if you'd like to check out my code... <a href='https://github.com/walpolsh/Js30'>Paul's JS30 Code</a>. After finishing the course I went back and redesigned his original drum machine with a new layout, animations and custom sounds:
+          After BitMaker I started <a href='https://javascript30.com/'>Wes Bos's JavaScript 30: 30 Day Vanilla JS Coding Challenge.</a> It was a very practical learning experience and taught me many new tricks including ES6 syntax, DOM manipulation, and CSS3+ design concepts. Most importantly it taught me that it was possible to solve many Development problems without resorting to a framework, compiler, library, or even a boilerplate. I uploaded all of my work to GitHub if you'd like to check out my code... <a href='https://github.com/walpolsh/Js30'>Paul's JS30 Code</a>. After finishing the course I went back and redesigned his original drum machine with a new layout, animations and custom sounds:
         </p>
         <div>
           <div className="keys">
